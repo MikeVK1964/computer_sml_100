@@ -1,6 +1,6 @@
 // ex7_17.cpp : 
 //
-#if 1
+
 #include <iostream>
 #include  <iomanip>  //
 #include <fstream>
@@ -42,7 +42,7 @@ int main(int argc, char* argv[])
 
 
     
-      smtron.read_file(pf);
+      smtron.read_file(in);
 
     in.close();
 

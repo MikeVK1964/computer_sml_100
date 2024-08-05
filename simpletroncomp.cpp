@@ -1,5 +1,7 @@
 
 #include "SimpletronComp.h"
+#include <fstream>
+
 using namespace SimpletronCompNameSpace;
 
 SimpletronComp::SimpletronComp()

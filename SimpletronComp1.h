@@ -9,9 +9,9 @@ using namespace std;
 namespace SimpletronCompNameSpace {
     const int MemoryLenth = 1000;  // число ячеек 1000
     enum simplOperation {
-        READ = 10,   // ввод данных в ячейку с клавиатуру
-        WRITE = 11,  
-        LOAD = 20,   // 
+        READ = 10,   // Ââîä ñ òåðìèíàëà â ïàì òü
+        WRITE = 11,
+        LOAD = 20,   // Çàãðóçêà â àêêóìóë òîð èç îïðåäåëåííîãî àäðåñà ïàì òè
         STORE = 21,  // Âûãðóçêà èç àêêóìóë òîðà â çàäàííûé àäðåñ ïàì òè
         ADD = 30, // Ñëîæåíèå ñëîâà â àêêóìóë òîðå è ñëîâà â ïàì òè (ðåçóëüòàò ñîõðàí åòñ  â àêêóìóë òîðå)
         SUBTRACT = 31, // Âû÷èòàíèå èç ñëîâà â àêêóìóë òîðå ñëîâà ïî óêàçàííîìó àäðåñó ïàì òè(ðåçóëüòàò ñîõðàí åòñ  â àêêóìóë òîðå)
@@ -75,7 +75,7 @@ namespace SimpletronCompNameSpace {
 
             switch (operationCode) {
             case READ: // 
-                cout << "введите значение в ячейку" << setfill('0') << setw(3) << operand << " "; cin >> memory[operand];
+                cout << "Ââîä â àäðåñ" << setfill('0') << setw(3) << operand << " "; cin >> memory[operand];
                 return 0;
             case WRITE:
                 cout << "WRITE " << memory[operand] << endl;
