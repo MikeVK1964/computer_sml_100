@@ -141,8 +141,7 @@ namespace SimpletronCompNameSpace {
             memory[9] = 3333;  // С
 
         }
-        void read_file(FILE* pf);
- 
+        void read_file(std::ifstream& in);
     private:
         int memory[MemoryLenth];
         int accumulator = 0; // аккумул тор  -xxxx
