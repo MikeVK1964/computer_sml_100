@@ -6,7 +6,8 @@ using namespace SimpletronCompNameSpace;
 
 SimpletronComp::SimpletronComp()
 {
-    for (auto i = 0; i < MemoryLenth; i++) memory[i] = 0;
+///     memory = new int[MemoryLenth];
+     for (auto i = 0; i < MemoryLenth; i++) memory[i] = 0;
 }
 
 void SimpletronComp::read_file(std::ifstream& in)

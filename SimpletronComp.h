@@ -24,13 +24,19 @@ namespace SimpletronCompNameSpace {
         BRANCHZERO = 42, // Ïåðåõîä ïî àäðåñó, åñëè â àêêóìóë òîðå íàõîäèòñ  0
         HALT = 43
     };
+    enum  class ComputerMemoryLenthType:size_t {
+     MemoryLenth100=100, MemoryLenth1000=1000 
+    };  
 
     class SimpletronComp {
     private:
         int instructionRegister = 0; // òåêóùà  êîìàíäà
-
+//        int MemoryLenth  = 1000;  // число ячеек памяти 1000
+//        int memory[MemoryLenth];
+        array<int,MemoryLenth> memory; 
     public:
         SimpletronComp();
+   ///     ~SimpletronComp(){delete [] memory;};
         //void Hellowold() {
         //    std::cout << "**Ñèìïëåòðîí ïðèâåòñòóåò âàñ" << endl;
         //    std::cout << "**Ïîæàëóéñòà,  ââåäèòå âàøó ïðîãðàììó, ïî îäíîé êîìàíäå\n";
@@ -143,7 +149,8 @@ namespace SimpletronCompNameSpace {
         }
         void read_file(std::ifstream& in);
     private:
-        int memory[MemoryLenth];
+//       int*  memory;
+//        int memory[MemoryLenth];
         int accumulator = 0; // àêêóìóë òîð  -xxxx
         int instructionCounter = 0; // àäðåñ ñëåäóþùåé êîìàíäû  xx
         int operationCode = 0; // êîä òåêóùåé îïåðàöèè
